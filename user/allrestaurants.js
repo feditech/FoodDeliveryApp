@@ -45,7 +45,7 @@ let exploreRestaurant = (uid)=>{
     dishcard1.innerHTML=""
     firebase.database().ref(`restaurant/${uid}/dishes`)
     .on("child_added",(data)=>{
-        console.log(data.val())
+        // console.log(data.val())
         let card = ` <div class="card" style="width: 18rem;">
     <img height=200px width=100%  src="${data.val().Picurl}" alt="...">
     <div class="card-body">
@@ -53,7 +53,7 @@ let exploreRestaurant = (uid)=>{
       <h6  >Rs: ${data.val().Dishprice} </h6>
       <h6>Delivery: ${data.val().Deliverytype} </h6>
       <h6>Category: ${data.val().Category} </h6>
-      <h2><button onclick="exploreRestaurant('${uid}')" width=100% type="button" class="btn btn-primary btn-lg">Order Now</button></h2>
+      <h2><button onclick="alert('nh hora isse agy')" width=100% type="button" class="btn btn-primary btn-lg">Order Now</button></h2>
     </div>
   </div>`   
         dishcard1.innerHTML += card

@@ -5,7 +5,14 @@ body{
 .navbar{
     color: white;
 }
-
+.btn1:hover{
+    background-color: black;
+    color: white;
+}
+.btn1{
+    background-color: white;
+    color: black;
+}
 
 .carousel-caption{
     display: inline;
