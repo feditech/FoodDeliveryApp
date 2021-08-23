@@ -10,7 +10,7 @@ firebase.auth().onAuthStateChanged((user) => {
         .once('value',(data)=>{
             username.innerHTML =  data.val().Username
             email.innerHTML = data.val().Email
-            console.log(data.val().profilepic)
+            // console.log(data.val().profilepic)
             if(data.val().profilepic != null){
                 defaultDp.setAttribute("src",`${data.val().profilepic}`)
 

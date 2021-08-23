@@ -95,6 +95,8 @@ firebase.auth().createUserWithEmailAndPassword(email.value, password.value)
                 Username: `${username.value}`,
                 Email: `${email.value}`,
                 Password: `${password.value}`,
+                Type: "user",
+                Uid: user.uid
 
             }
         ).then((res) => {
