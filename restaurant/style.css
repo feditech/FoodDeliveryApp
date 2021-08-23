@@ -74,7 +74,6 @@ margin: 0 auto;
 
 
 
-
 /* Login signup profile styling */
 .mt-20 {
     margin-top: 20px;
@@ -104,13 +103,31 @@ position: relative;
 
 
  /* restaurant Profile  */
- .dishcard{
+.dishcard{
      margin-top: 40px;
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap;
      
- }
+
+ } 
+ .dishcardmain{
+    background-color: lightpink;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.dishcardmain .dishcard{
+  
+    margin: 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+ 
 
  .card-body{
     /* width: 80%; */
