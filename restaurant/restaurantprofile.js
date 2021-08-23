@@ -11,14 +11,14 @@ firebase.auth().onAuthStateChanged((user) => {
         firebase.database().ref(`restaurant/${uid}`)
         .once('value',(data)=>{
            
-            
+            console.log(data.val().profilepic == "")
             restaurantname.innerHTML =  data.val().Restaurantname
             email.innerHTML = data.val().Email
             country.innerHTML = data.val().Country
             city.innerHTML = data.val().City
+
             if(data.val().profilepic != null){
                 defaultDp.setAttribute("src",`${data.val().profilepic}`)
-
             }
         })
      // ...

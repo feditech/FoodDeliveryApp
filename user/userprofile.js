@@ -10,6 +10,7 @@ firebase.auth().onAuthStateChanged((user) => {
         .once('value',(data)=>{
             username.innerHTML =  data.val().Username
             email.innerHTML = data.val().Email
+            console.log(data.val().profilepic)
             if(data.val().profilepic != null){
                 defaultDp.setAttribute("src",`${data.val().profilepic}`)
 
@@ -79,7 +80,7 @@ firebase.auth().onAuthStateChanged((user) => {
             let profilePicUrl = await uploadFiles(profilepic.files[0],Ref)  
             console.log(profilePicUrl)
             firebase.auth().onAuthStateChanged((user) => {
-                firebase.database().ref(`restaurant/${user.uid}`).update({profilepic: profilePicUrl})
+                firebase.database().ref(`users/${user.uid}`).update({profilepic: profilePicUrl})
                 .then(()=>{
                     closebtn.click()
                     defaultDp.setAttribute("src",`${profilePicUrl}`)

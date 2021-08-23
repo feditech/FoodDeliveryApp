@@ -83,7 +83,8 @@ let register = async () => {
                     Password: `${password.value}`,
                     Country: `${country.value}`,
                     City: `${city.value}`,
-                    Type: "restaurant"
+                    Type: "restaurant",
+                    // profilepic: ""
 
                 }
             ).then((res) => {
