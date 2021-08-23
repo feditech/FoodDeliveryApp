@@ -34,7 +34,6 @@ body{
     display: flex;
     flex-wrap: wrap;
     color: white;
-
 }
 .bannerdescription{
     box-shadow: royalblue;
@@ -45,12 +44,20 @@ body{
    padding: 70px 0px 50px 50px;
 }
 
-/* .bannerimage{
-    margin:30px 10px;
+ .bannerimage{
+    margin:0px 20px 20px 20px;
+} 
+/* .bannerimage img{
+    padding: 40px 40px 40px 0px ;
+    /* border-radius: 30%; 
 } */
 .bannerimage img{
-    padding: 40px 40px 40px 0px ;
-    /* border-radius: 30%; */
+    border: 2px solid; 
+   margin: 0 auto;
+   height: 100%;
+   width: 100%;
+   padding: 40px 40px 40px 40px ;
+   border-radius: 30%;
 }
 .famousrestaurantcards{
     margin-top: 60px;
@@ -132,7 +139,7 @@ position: relative;
 
 
 
-/* Footer styling*/
+/* Footer styling
 .footer-div{
     background-color: rgb(238, 237, 237);
     padding: 30px 0;
@@ -166,7 +173,7 @@ position: relative;
 .footer-link:hover{
     text-decoration: none;
     color: black;
-}
+}*/
 
 
 
@@ -175,9 +182,15 @@ position: relative;
     body {
       background-color: lightblue;
     }
-    .banner{
+    .mainbanner{
+        width: 100%;
+        margin: 0;
+        padding: 0;
     
-        margin: 20px;
+    }
+    .banner{
+        width: 100%;
+        margin: 15px;
         display: flex;
         flex-wrap: wrap;
     
@@ -189,13 +202,23 @@ position: relative;
     .bannerimage{
         margin: 0 auto;
     }
-    .bannerimage img{
-        /* border: 2px solid; */
+    .bannerimage{
+        /* margin: 0 auto; */
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+    /* .bannerimage img{
+         border: 2px solid; 
         margin: 0 auto;
         height: 100%;
         width: 100%;
         padding: 40px 40px 40px 40px ;
         border-radius: 30%;
+    } */
+    .footer-div{
+        background-color: rgb(238, 237, 237);
+        padding: 0;
     }
   }
 
@@ -217,14 +240,26 @@ position: relative;
         margin:0 auto;
     }
     .bannerimage{
-        margin: 0 auto;
+        /* margin: 0 auto; */
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
     }
     .bannerimage img{
         /* border: 2px solid; */
         margin: 0 auto;
         height: 100%;
-        width: 100%;
+        width: 80%;
         padding: 40px 40px 40px 40px ;
         border-radius: 30%;
+    }
+    .footer-div{
+        width: inherit;
+        background-color: rgb(238, 237, 237);
+        padding: 0;
+    }
+
+    .footer-head{
+        width: 80%;
     }
   }
