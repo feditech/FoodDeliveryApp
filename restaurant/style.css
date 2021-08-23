@@ -105,6 +105,12 @@ position: relative;
      
  }
 
+ .card-body{
+    /* width: 80%; */
+    margin: 0 auto;
+}
+
+
 
 
 /* Footer styling*/

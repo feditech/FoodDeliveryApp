@@ -65,7 +65,10 @@ margin: 0 auto;
 
 
 
-
+.card-body{
+    /* width: 80%; */
+    margin: 0 auto;
+}
 
 
 /* Login signup profile styling */
