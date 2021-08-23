@@ -53,7 +53,7 @@ let exploreRestaurant = (uid)=>{
       <h6  >Rs: ${data.val().Dishprice} </h6>
       <h6>Delivery: ${data.val().Deliverytype} </h6>
       <h6>Category: ${data.val().Category} </h6>
-      <h2><button onclick="alert('nh hora isse agy')" width=100% type="button" class="btn btn-primary btn-lg">Order Now</button></h2>
+      <h2><button onclick="alert('I tried my best') alert('I will make dashboard soon.')" width=100% type="button" class="btn btn-primary btn-lg">Order Now</button></h2>
     </div>
   </div>`   
         dishcard1.innerHTML += card
